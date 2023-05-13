@@ -5,6 +5,7 @@
 --bg:#222;
 --border: .1rem solid rgba(255,255,255,.3);
 --border-radius:10px;
+    --transition:all .2s linear;
 
 }
 *{
@@ -17,7 +18,7 @@
     text-decoration: none;
     text-transform: capitalize;
     list-style: none;
-    transition:all .2s linear;
+    transition:var(--transition);
 }
 
 html{font-size: 62.5%;
@@ -81,6 +82,7 @@ section{
     background: var(--main-color);
     cursor: pointer;
     border-radius: 1rem;
+    transition:var(--transition);
 }
 
 .btn:hover{
@@ -116,6 +118,7 @@ header ul li{
     font-size:1.6rem;
     color:#fff;
      transition: var(--transition);
+    transition:var(--transition);
 }
 .header .navbar a:hover,
 .header .navbar a.active{
@@ -130,6 +133,7 @@ header ul li{
     font-size: 2.5rem;
     margin-left: 2rem;
     position: relative;
+    transition:var(--transition);
    
 }
 .header .icons div:hover{
@@ -165,6 +169,7 @@ transform-origin: top;
     box-shadow: 0 0 10px rgba(255,255,255,.6);
 border-radius: var(--border-radius);
     transition: var(--transition);
+    
 }
 .header .search-form.active{
     transform: scaleY(1); 
@@ -277,7 +282,8 @@ color: var(--main-color);
 .header .cart-items-container .cart-item:hover  .card-item-price span,
 .header .cart-items-container .cart-item:hover  h3,
 .header .cart-items-container .cart-item:hover  .fa-times,
-.header .cart-items-container .cart-item:hover .btns i{
+.header .cart-items-container .cart-item:hover .btns i,
+.header .cart-items-container .cart-item:hover .quantity{
     color: #fff;
 }
 
