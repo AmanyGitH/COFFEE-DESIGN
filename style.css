@@ -43,7 +43,7 @@ section{
 .section.active{
     z-index: 4;
     opacity: 1;
-    animation: slidesection 1s ease;
+    transition:all .2s linear;
 }
 @keyframes  slidesection {
     0%{
@@ -115,6 +115,7 @@ header ul li{
     margin:0 1rem;
     font-size:1.6rem;
     color:#fff;
+     transition: var(--transition);
 }
 .header .navbar a:hover,
 .header .navbar a.active{
@@ -161,6 +162,9 @@ display: flex;
 align-items: center;
 transform: scaleY(0);
 transform-origin: top;
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+border-radius: var(--border-radius);
+    transition: var(--transition);
 }
 .header .search-form.active{
     transform: scaleY(1); 
@@ -173,6 +177,7 @@ transform-origin: top;
     color: var(--black);
     padding: 1rem;
     text-transform: none;
+    border-radius: var(--border-radius);
 }
 .header .search-form label{
     cursor: pointer;
@@ -187,11 +192,14 @@ transform-origin: top;
     position: absolute;
     top: 100%;
     right: -100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 73px);
     width: 100%;
 background: #fff;
     z-index: 111111;
     padding: 0 1.5rem;
+    overflow-y: scroll;
+     transition: var(--transition);
+    
 }
 .header .cart-items-container.active{
     right: 0;
