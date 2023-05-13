@@ -41,7 +41,7 @@ body{
 section{
     padding: 2rem 7%;
 }
-.section.active{
+section.active{
     z-index: 4;
     opacity: 1;
     transition:all 2s linear;
