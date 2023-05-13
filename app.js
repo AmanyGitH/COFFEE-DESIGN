@@ -123,7 +123,7 @@ searchForms.classList.remove("active")
 window.onscroll= () => {
   navbar.classList.remove("active")
   searchForms.classList.remove("active")
-  cartItem.classList.remove("active")
+  
 }
 
 function loader(){
